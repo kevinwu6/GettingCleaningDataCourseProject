@@ -35,5 +35,7 @@ run_analysis <- function() {
     
     ## Calculate mean for each measurement
     tidy <<- combined %>% group_by(Subject, Activity) %>% summarise_each(funs(mean))
+    
+    write.table(tidy, 'tidy.txt', row.names = FALSE)
 
 }
