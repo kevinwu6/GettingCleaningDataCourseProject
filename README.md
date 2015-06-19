@@ -11,6 +11,7 @@ The script will run as long as the current working directory contains the follow
 * 'test/y_test.txt': Test labels.
 
 The script performs these steps:
+
 1. Read measurement labels from `features.txt`.
 2. Read test data (subject, signal, activity) from `subject_test.txt`, `X_test.txt`, `y_test.txt`, adding measurement labels to the signal data.
 3. Read training data (subject, signal, activity) from `subject_train.txt`, `X_train.txt`, `y_train.txt`, adding measurement labels to the signal data.
